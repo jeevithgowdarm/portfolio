@@ -53,14 +53,62 @@
     </ul>
 </section>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li><b>AI-Based Traffic Management System</b> – LSTM & YOLOv5 to reduce congestion by 30%.</li>
-        <li><b>Cloud-Based Resume Builder</b> – Online resume creation & storage.</li>
-        <li><b>Car Price Prediction</b> – AI-based web app (Internship project).</li>
-        <li><b>Interior Design Web App</b> – ML-powered design visualization tool.</li>
-    </ul>
+<!-- PROJECTS -->
+<section id="projects" class="fade-in">
+    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+        <button class="filter-btn" onclick="filterProjects('ai')">AI</button>
+        <button class="filter-btn" onclick="filterProjects('web')">Web</button>
+        <button class="filter-btn" onclick="filterProjects('cloud')">Cloud</button>
+    </div>
+
+    <!-- PROJECT GALLERY -->
+    <div class="gallery">
+
+        <div class="card" data-category="ai"
+             onclick="openModal('traffic.jpg', 
+             'AI-Based Traffic Management System', 
+             'Used LSTM & YOLOv5 for congestion prediction & emergency vehicle detection. Reduced congestion by 30% in simulations.', 
+             'https://your-live-demo-link.com/traffic', 
+             'https://github.com/jeevithgowdarm/traffic-management')">
+            <img src="traffic.jpg" alt="AI Traffic Management">
+            <h3>AI-Based Traffic Management</h3>
+        </div>
+
+        <div class="card" data-category="cloud"
+             onclick="openModal('resume-builder.jpg', 
+             'Cloud-Based Resume Builder', 
+             'Created an online resume generation platform with cloud storage for easy access.', 
+             'https://your-live-demo-link.com/resume-builder', 
+             'https://github.com/jeevithgowdarm/resume-builder')">
+            <img src="resume-builder.jpg" alt="Cloud Resume Builder">
+            <h3>Cloud-Based Resume Builder</h3>
+        </div>
+
+        <div class="card" data-category="ai web"
+             onclick="openModal('car-price.jpg', 
+             'Car Price Prediction', 
+             'AI-powered web app predicting car prices with high accuracy. Built during Ediglobe internship.', 
+             'https://your-live-demo-link.com/car-price', 
+             'https://github.com/jeevithgowdarm/car-price-prediction')">
+            <img src="car-price.jpg" alt="Car Price Prediction">
+            <h3>Car Price Prediction</h3>
+        </div>
+
+        <div class="card" data-category="web ai"
+             onclick="openModal('interior-design.jpg', 
+             'Interior Design Web App', 
+             'ML-powered design visualization tool for architects & interior designers.', 
+             'https://your-live-demo-link.com/interior-design', 
+             'https://github.com/jeevithgowdarm/interior-design-app')">
+            <img src="interior-design.jpg" alt="Interior Design">
+            <h3>Interior Design Web App</h3>
+        </div>
+
+    </div>
 </section>
 
 <section>
