@@ -14,3 +14,17 @@ function filterProjects(category) {
         }
     });
 }
+function openVideoModal(videoUrl, title, description, codeLink) {
+    document.getElementById("projectModal").style.display = "block";
+    document.getElementById("modalBody").innerHTML = `
+        <h2 style="color:white;">${title}</h2>
+        <iframe width="100%" height="400" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
+        <p style="color:white; text-align:center; margin-top:10px;">${description}</p>
+    `;
+
+    let linksHtml = "";
+    if(codeLink) {
+        linksHtml += `<a href="${codeLink}" target="_blank" class="code">💻 View Code</a>`;
+    }
+    document.getElementById("modalLinks").innerHTML = linksHtml;
+}
