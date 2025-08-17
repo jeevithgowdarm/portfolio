@@ -28,3 +28,8 @@ function openVideoModal(videoUrl, title, description, codeLink) {
     }
     document.getElementById("modalLinks").innerHTML = linksHtml;
 }
+function closeModal() {
+    document.getElementById("projectModal").style.display = "none";
+    document.getElementById("modalBody").innerHTML = "";
+    document.getElementById("modalLinks").innerHTML = "";
+}
